@@ -120,4 +120,4 @@ FER.plot_results(img,preds)
 
 ![](images/Figure_4.png)
 
-- If some faces can't detect try to reduce scale and neigbor parameters while creating class obeject.
+- If some faces can't detect try to reduce scale and neigbor parameters while creating class object.
