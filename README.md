@@ -118,4 +118,5 @@ img,preds=FER.predict('http://c.files.bbci.co.uk/90C1/production/_111775073_gett
 FER.plot_results(img,preds)
 ```
 
+![](images/Figure_4.png)
 
