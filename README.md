@@ -1,4 +1,4 @@
-# Facial Expression Detection
+# Facial Expression Recognition
 
 Detect facial expressions with pretrained convolutional neural network model or build your own. The model can predict 7 different expression based on data.
 - Angry
@@ -59,7 +59,7 @@ from fer import *
 FER=FaceExpressionRecognition()
 ```
 
-- Use predict function.
+- Use predict function with path of image.
 ```python
 img,preds=FER.predict('images/happy1.png',detect_faces=False)
 plt.imshow(img)
@@ -88,3 +88,12 @@ img,preds=FER.predict('https://i.kym-cdn.com/photos/images/newsfeed/001/449/979/
 FER.plot_results(img,preds)
 ```
 ![](images/Figure_2.png)
+
+- You can set detect_faces True if face in the image is far. This probably improve result.
+![](images/walter_white.jpg)
+```python
+img,preds=(FER.predict('https://66.media.tumblr.com/67d99b3060dd48fb79ab65199f8f5f73/tumblr_o9mfwhCUFt1udqbqpo2_1280.jpg',detect_faces=True))
+FER.plot_results(img,preds)
+```
+![](images/Figure_3.png)
+
