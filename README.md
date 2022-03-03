@@ -39,8 +39,10 @@ validators==0.18.2
 numpy==1.21.5
 ```
 
-##Model Performance
+## Model Performance
 
 My cnn model performed %64 accuracy on private test data.
+
+![](images/accuracy.png)
 
 
