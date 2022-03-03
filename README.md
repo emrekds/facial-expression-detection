@@ -61,7 +61,11 @@ FER=fer.FaceExpressionRecognition()
 
 - Use predict function.
 ```python
-img,preds=FER.predict('images/happy1.png')
+img,preds=FER.predict('images/happy1.png',detect_faces=False)
+plt.imshow(img)
+```
+![](images/happy1.png)
+```python
 print(preds)
 [{'Angry': 0.0004581761, 
   'Disgust': 7.457644e-09, 
@@ -70,6 +74,10 @@ print(preds)
   'Sad': 0.0007480914, 
   'Surprise': 0.024714392, 
   'Neutral': 0.110366486}]
-plt.imshow(img,cmap='gray')
+
 ```
-![](images/happy1.png)
+- Use plot_results function to create plot of results.
+```python
+FER.plot_results(img,preds)
+```
+![](images/Figure_1.png)
