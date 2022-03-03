@@ -47,7 +47,7 @@ CNN model performed %64 accuracy on private test data.
 
 ## Model Architecture
 
-![](images/cnn_model.png)
+![](images/cnn_model_.png)
 
 ## Usage
 
