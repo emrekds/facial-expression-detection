@@ -27,6 +27,10 @@ Data contains mostly happy expression.
 Docs on Kaggle API usage :
 [github](https://github.com/Kaggle/kaggle-api) | [kaggle](https://www.kaggle.com/docs/api)
 
+## Data Samples
+
+![](images/data_samples.png)
+
 ## Requirements
 
 ```python
