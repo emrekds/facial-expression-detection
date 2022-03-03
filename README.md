@@ -43,4 +43,4 @@ numpy==1.21.5
 
 My cnn model performed %64 accuracy on private test data.
 
-![images/accuracy.png]
+
