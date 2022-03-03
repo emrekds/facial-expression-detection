@@ -66,6 +66,7 @@ FER=FaceExpressionRecognition(scale=1.25,neighbor=5)
 ```
 
 - Use predict function with path of image.
+- Since i trained the model on gpu you may get warnings from tensorflow. It dont effect the way model works. Just ignore them.
 
 ```python
 img,preds=FER.predict('images/happy1.png',detect_faces=False)
