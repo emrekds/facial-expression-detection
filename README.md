@@ -51,12 +51,12 @@ CNN model performed %64 accuracy on private test data.
 
 - Import or open fer.py
 ```python
-import fer
+from fer import *
 ```
 
 - Create a class object.
 ```python
-FER=fer.FaceExpressionRecognition()
+FER=FaceExpressionRecognition()
 ```
 
 - Use predict function.
@@ -81,3 +81,10 @@ print(preds)
 FER.plot_results(img,preds)
 ```
 ![](images/Figure_1.png)
+
+- You can also use predict with url instead of local images as long as you don't get 403 error.
+```python
+img,preds=FER.predict('https://i.kym-cdn.com/photos/images/newsfeed/001/449/979/722.jpeg',detect_faces=False)
+FER.plot_results(img,preds)
+```
+![](images/Figure_2.png)
